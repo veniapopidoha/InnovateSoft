@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const Wrap = styled.div`
   display: flex;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
 `;
 
 export const Shapes = styled.img`
   width: 100vw;
   height: 90vh;
+  margin-top: 10vh;
   position: absolute;
   top: -10vh;
   mix-blend-mode: luminosity;
@@ -18,7 +19,7 @@ export const Shapes = styled.img`
 
 export const Bg = styled.img`
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   position: absolute;
   top: 0;
   z-index: 0;
