@@ -12,6 +12,12 @@ export const Title = styled.h1`
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 35px;
+  }
 `;
 
 export const Wrap = styled.div`
@@ -21,6 +27,9 @@ export const Wrap = styled.div`
   justify-content: center;
   background: url('${shapes}');
   height: 100vh;
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 export const CardDiv = styled.div`

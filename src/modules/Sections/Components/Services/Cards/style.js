@@ -5,13 +5,18 @@ export const Wrap = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 35px;
+  @media screen and (max-width: 480px) {
+    margin: 0;
+  }
 `;
 
 export const Image = styled.img`
   width: 330px;
-  height: 220px;
   background-size: cover;
   object-fit: contain;
+  @media screen and (max-width: 480px) {
+    width: 200px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -24,4 +29,11 @@ export const Title = styled.h1`
   max-width: 300px;
 
   color: #767676;
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  @media screen and (max-width: 380px) {
+    font-size: 15px;
+  }
 `;

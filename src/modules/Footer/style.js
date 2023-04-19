@@ -9,6 +9,9 @@ export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    height: 40vh;
+  }
 `;
 
 export const Text = styled.h2`
@@ -21,10 +24,17 @@ export const Text = styled.h2`
   text-align: center;
   position: relative;
   top: 13vh;
+  @media screen and (max-width: 480px) {
+    top: 0;
+    font-size: 10px;
+  }
 `;
 
 export const Logo = styled.img`
   width: 250px;
+  @media screen and (max-width: 480px) {
+    width: 150px;
+  }
 `;
 
 export const LogoConteiner = styled.div`
@@ -42,6 +52,15 @@ export const Title = styled.h2`
   font-size: 20px;
   line-height: 92.6%;
   color: #ffffff;
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 380px) {
+    font-size: 8px;
+  }
 `;
 
 export const InfoBlock = styled.div`
@@ -62,4 +81,13 @@ export const Info = styled.h3`
   line-height: 156.1%;
   margin: 0;
   color: #ffffff;
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 8px;
+  }
+  @media screen and (max-width: 380px) {
+    font-size: 6px;
+  }
 `;
